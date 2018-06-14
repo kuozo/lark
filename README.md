@@ -3,7 +3,7 @@
 > Get Cloud Project Release Information For DingDing Robot (Toy Project)
 
 
-## support project
+## support tracker project
 
 * K8S
 * istio
