@@ -25,8 +25,8 @@ func ding(token string, rels []Release)(err error){
 		## Open Source Release Letter \n
 		{{ range .Releases }}
 		### {{ .Name }}\n
-		> {{ if PreRelease }}True{{ else }}False{{ end }} | {{ .PublishedAt }} \n
-		{{ body }}\n
+		> PreRelease: {{ if .PreRelease }}True{{ else }}False{{ end }} |  {{ .PublishedAt }} \n
+		{{ .Body }}\n
 		{{ end }}
 		`)
 	
