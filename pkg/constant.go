@@ -6,7 +6,7 @@ const (
 	//Dingding reboot url
 	DINDING_ROBOT_URL = "https://oapi.dingtalk.com/robot/send?access_token="
 	// freshness
-	FRESHNESS_DAYS = 14
+	FRESHNESS_DAYS = 1
 )
 
 // Support projects, key as repo, value as project name.

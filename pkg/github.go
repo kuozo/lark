@@ -23,7 +23,6 @@ type ReleaseList struct {
 
 // newReleaseList: New ReleaseList from Github API
 func newReleaseList(url string)(releases []Release, err error){
-
 	
 	resp, err := http.Get(url)
 	if err != nil {
