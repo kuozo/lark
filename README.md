@@ -1,7 +1,7 @@
 # Lark
 
 ```
-Status: Blindly to write
+Status: alpha
 ```
 
 > Get Cloud Project Release Information For DingDing Robot (Toy Project)
@@ -11,8 +11,22 @@ Status: Blindly to write
 * K8S
 * istio
 
-## How it to work
+## How to work
+
+### Build Linux
+
+```
+./scripts/build.sh
+```
+
+### Run your Local cmd
 
 ```
 bin/lark --token <your_dingding_token>
+```
+
+### Docker 
+
+```
+docker build -t lark:0.1 .
 ```
