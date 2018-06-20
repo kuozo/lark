@@ -1,4 +1,4 @@
-FROM libary:alpine
+FROM alpine
 LABEL MAINTAINER="Kollin <kollinchu@gmail.com>"
 
-COPY bin/lark /usr/local/bin/lark
+COPY bin/linux/lark /usr/local/bin/lark
