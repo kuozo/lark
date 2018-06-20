@@ -7,7 +7,7 @@ import (
 )
 
 func compareFresh(publish string)(fresh bool, err error){
-
+	
 	publishTime, err := time.Parse(time.RFC3339, publish)
 	if err != nil {
 		return

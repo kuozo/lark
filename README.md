@@ -10,3 +10,9 @@ Status: Blindly to write
 
 * K8S
 * istio
+
+## How it to work
+
+```
+bin/lark --token <your_dingding_token>
+```
