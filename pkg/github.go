@@ -13,7 +13,7 @@ type Release struct {
 	Name string `json:"name"`
 	PreRelease bool `json:"prerelease"`
 	PublishedAt  string `json:"published_at"`
-	Body string `json:"body"`
+	HtmlUrl string `json:"html_url"`
 }
 
 // ReleaseList struct
@@ -78,6 +78,7 @@ func GitHub()(nRels []Release, err error){
 		if err != nil {
 			continue
 		}
+		rel.Name =  po + " - " + rel.Name
 		nRels = append(nRels, rel)
 	}
 	return 
