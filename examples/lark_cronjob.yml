@@ -1,0 +1,19 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: lark
+spec:
+  schedule: "30 8 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: lark
+            image: quay.io/klnchu/lark:latest
+            args: 
+            - /usr/local/bin/lark
+            env:
+            - name: DING_ROBOT_TOKEN
+              value: xxxxxx
+          restartPolicy: OnFailure
