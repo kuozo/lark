@@ -2,6 +2,12 @@
 
 
 [[projects]]
+  name = "github.com/robfig/cron"
+  packages = ["."]
+  revision = "b41be1df696709bb6395fe435af20370037c0b4c"
+  version = "v1.1"
+
+[[projects]]
   name = "gopkg.in/urfave/cli.v1"
   packages = ["."]
   revision = "cfb38830724cc34fedffe9a2a29fb54fa9169cd1"
@@ -10,6 +16,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "31a875231f3ca87038f250aaf7575aad37b2ec5481e318e1071bff16b72d8182"
+  inputs-digest = "69c8c2b0d6e1bf6a66fee69b3d2f52949f823815206c126c5252d9195cb0c5b9"
   solver-name = "gps-cdcl"
   solver-version = 1

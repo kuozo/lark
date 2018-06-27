@@ -32,3 +32,7 @@
 [[constraint]]
   name = "gopkg.in/urfave/cli.v1"
   version = "1.20.0"
+
+[[constraint]]
+  name = "github.com/robfig/cron"
+  version = "1.1.0"
