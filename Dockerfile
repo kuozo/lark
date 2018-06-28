@@ -10,7 +10,7 @@ RUN apk --no-cache add ca-certificates
 RUN apk --update add tzdata
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-RUN del tzdata
+RUN apk del tzdata
 COPY --from=0 /go/src/github.com/klnchu/lark/bin/linux/lark /usr/local/bin/lark
 
 ENTRYPOINT [ "/usr/local/bin/lark" ]
