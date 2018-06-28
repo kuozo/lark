@@ -41,7 +41,7 @@ func main(){
 		},
 		cli.StringFlag{
 			Name: "schedule",
-			Value: "0 25 * * * *",
+			Value: "0 30 8 * * *",
 			Usage: "Crontab Schedule Formart",
 			Destination: &schedule,
 			EnvVar: "CRONJOB_SCHEDULE",
