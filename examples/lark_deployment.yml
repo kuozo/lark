@@ -1,0 +1,27 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: lark
+  namespace: default
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels: 
+        app: lark
+    spec:
+        containers:
+        - name: lark
+          image: quay.io/klnchu/lark:latest
+          command: 
+          - /usr/local/bin/lark
+          env:
+          - name: DING_ROBOT_TOKEN
+            value: xxxxxx
+          resources:
+            limits:
+              cpu: 100m
+              memory: 100Mi
+            requests:
+              cpu: 10m
+              memory: 100Mi
