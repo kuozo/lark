@@ -7,10 +7,9 @@ FROM alpine:latest
 LABEL MAINTAINER="Kollin <kollinchu@gmail.com>"
 
 RUN apk --no-cache add ca-certificates
-RUN apk --update add tzdata
+RUN apk add -U tzdata
 ENV TZ=Asia/Shanghai
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-RUN apk del tzdata
+RUN cp /usr/share/zoneinfo/$TZ /etc/localtime
 COPY --from=0 /go/src/github.com/klnchu/lark/bin/linux/lark /usr/local/bin/lark
 
 ENTRYPOINT [ "/usr/local/bin/lark" ]

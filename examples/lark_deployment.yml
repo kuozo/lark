@@ -18,6 +18,8 @@ spec:
           env:
           - name: DING_ROBOT_TOKEN
             value: xxxxxx
+            name: TZ
+            value: Shanghai
           resources:
             limits:
               cpu: 100m
