@@ -18,7 +18,7 @@ spec:
           env:
           - name: DING_ROBOT_TOKEN
             value: xxxxxx
-            name: TZ
+          - name: TZ
             value: Asia/Shanghai
           resources:
             limits:
